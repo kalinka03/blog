@@ -15,7 +15,6 @@
 						<div class="form-group">
 							<input  name='email' type="text" class="form-control"  placeholder="Ваше email">
 													</div>
- 
             <input id="login" class="form-control" type="text" name="login" placeholder="Ваш login" value="" >
         
 						 <input id="password" class="form-control" type="password" name="password" placeholder="Ваш пароль"value="" >

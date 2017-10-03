@@ -1,9 +1,34 @@
    <center>
    	<h1>Ви обрали категорію: <?=$data['category']['title'] ?></h1>
-   	<h2>Товари цієї категорії:</h2>
-   	<?php foreach( $data['products'] as  $product ) { ?>
-   	<a class="category_view" href="/product/<?=$product['id']?>"><?=$product['title']?></a>
-   	<img src="/files/avatars/avatar_<?=$data['product']['id']?>.jpg" style="max-width:50px;" alt=""><br/>
-   	<?php } ?>
-   </center>
-  <!--  if (file_exists('files/products/product_'.$data['category']['id'].'.jpg')) {?> -->
+     
+    <?php 
+    global $_config, $_page;
+    $i=$_page*$_config['items_on_page']; 
+// echo $data['category']['id'];
+    ?>
+    <?php 
+
+    foreach( $data['posts'] as $key =>  $posts ) {
+      if ($posts ) { ?>
+      <div style="border: 3px solid lawngreen; padding: 10px; margin: 5px;">
+        <h3><?=$posts['title']?></h3>
+        <p class="category_view"><?=$posts['text']?></p>
+        <p style="float: right;"><?=$posts['created_at']?></p> <br/>
+      </div> 
+      <?php }} ?>
+    <? else {
+      $_SESSION['flash_msg'] = "В базе отсуствуют посты";
+    } ?>
+
+    
+  </center>
+  <div align="center" >
+    <?php  pagination(
+      $data['pagination']['pages_count'],'/catalog/'.$data['category']['id']
+      
+      );
+
+      ?>
+
+    </div>
+

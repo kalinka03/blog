@@ -2,7 +2,7 @@
 define("HOST", "localhost");
 define("USER", "root");
 define("PASS", "secret");
-define("DBNAME", "categories");
+define("DBNAME", "blog");
 // Connect to database
 
 try {

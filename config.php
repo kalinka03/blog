@@ -1,6 +1,6 @@
 <?php
 
 $_config = [
-	'admin_email' => 'admin@email.com',
-	  'items_on_page' => 20
+	'admin_email' => 'katerinka2009@i.ua',
+	  'items_on_page' => 5
 ];

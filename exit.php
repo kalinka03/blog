@@ -2,6 +2,6 @@
 if( $action == 'logout') {
 	if(!empty($_SESSION['user'])){
 			unset( $_SESSION['user'] );
-			include "views/header.php";
+			include "views/login.php";
 		}
 	}

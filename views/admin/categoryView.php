@@ -2,13 +2,12 @@
   <p align="center"><a href="/admin/category?method=create">Створити категорію</a></p> 
 </div>
 
-<center>
+<!-- <center>
  <table style="border-collapse: collapse;"> 
   <tr style="border-collapse: collapse;">
     <td style="border: solid 1px black; padding: 10px"><b>number</b></td>
     <td style="border: solid 1px black; padding: 10px"><b>title</b></td>
-    <td style="border: solid 1px black; padding: 10px"><b>edit</b></td>
-    <td style="border: solid 1px black; padding: 10px"><b>delete</b></td>
+ 
 
   </tr>
   
@@ -28,14 +27,9 @@
            <!--  <td style="border: solid 1px black; padding: 10px">
                 <?= $user['email'] ?>
               </td> -->
-              <td style="border: solid 1px black; padding: 10px">
-                <a href="/admin/category?method=edit&id=<?=$res['id']?>">Редагувати</a>
-              </td>
-              <td style="border: solid 1px black; padding: 10px">
-                <a href="/admin/category?method=delete&id=<?=$res['id']?>">Видалити</a>
-              </td>
+        
             </tr>
             <?php } ?>
 
           </table>  
-        </center>
+        </center> -->
